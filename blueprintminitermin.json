@@ -1,0 +1,30 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "login": true,
+  "siteOptions": {
+    "blogname": "WP MiniTermin"
+  },
+  "steps": [
+        {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://www.wieser.at/wp-content/uploads/2025/07/minitermine_terminliste.xml"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://www.wieser.at/wp-content/uploads/2025/07/minitermin.zip"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://www.wieser.at/wp-content/uploads/2025/07/blocksupport.zip"
+      }
+    }
+  ]
+}
